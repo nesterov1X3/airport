@@ -1,10 +1,10 @@
 import React from 'react';
+import SwitchFlight from './SwitchFlight.jsx'
 
  const InfoList = () => {
     return (
         <div className="flight-list">
-            <button className="flight-list_departures flight-list_btn">DEPARTURES</button>
-            <button className="flight-list_arrivals flight-list_btn">ARRIVALS</button>
+           <SwitchFlight/>
             <ul className="flight-list_info">
                 <div className="flight-list_info_item">Terminal</div>
                 <div className="flight-list_info_item">Local time</div>
@@ -30,7 +30,7 @@ import React from 'react';
                     <div className="info-items_flight_item self-item_2">Lot</div>
                     <div className="info-items_flight_item">LO755</div>
                 </ul>
-                <ul className="info-items_flight ">
+                <ul className="info-items_flight">
                     <div className="info-items_flight_item">D</div>
                     <div className="info-items_flight_item">8:50</div>
                     <div className="info-items_flight_item self-item">Zaporizhhia</div>
