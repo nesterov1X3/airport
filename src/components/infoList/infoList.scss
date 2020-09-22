@@ -1,0 +1,57 @@
+.flight-list {
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(219, 215, 215);
+    border-radius: 40px 40px 0 0;
+}
+
+.flight-list_info {
+    display: flex;
+    list-style-type: none;
+    margin-top: 70px;
+}
+
+.flight-list_info_item {
+    margin-right: 65px;
+}
+
+.flight-list_info_item:nth-child(4) {
+    margin-left: 40px;
+}
+
+.flight-list_info_item:nth-child(5) {
+    margin-left: 60px;
+}
+
+.flight-list_info_item:nth-child(6) {
+    margin-left: 50px;
+}
+
+.info-items_flight {
+    display: flex;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.info-items_flight:nth-child(odd) {
+    background-color: rgba(123, 109, 136, 0.164);
+}
+
+.info-items_flight_item {
+    margin-right: 100px;
+}
+
+// .info-items_flight_item:nth-child(4) {
+//     margin-right: 40;
+// }
+.self-item {
+    margin-right: 70px;
+}
+
+.self-item_2 {
+    margin-right: 140px;
+}
+
+.self-item_3 {
+    margin-right: 80px;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header.jsx';
-import Search from './Search.jsx';
-import InfoList from './InfoList.jsx'
+import Header from './components/header/Header.jsx';
+import Search from './components/search/Search.jsx';
+import InfoList from './components/infoList/InfoList.jsx';
 
  const App = () => {
     return (

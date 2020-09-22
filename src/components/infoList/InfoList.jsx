@@ -1,10 +1,12 @@
 import React from 'react';
-import SwitchFlight from './SwitchFlight.jsx'
+import SwitchFlight from '../switchFlight/SwitchFlight.jsx'
 
- const InfoList = () => {
+import './infoList.scss'
+
+const InfoList = () => {
     return (
         <div className="flight-list">
-           <SwitchFlight/>
+            <SwitchFlight />
             <ul className="flight-list_info">
                 <div className="flight-list_info_item">Terminal</div>
                 <div className="flight-list_info_item">Local time</div>
