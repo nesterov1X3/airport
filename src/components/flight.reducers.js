@@ -1,7 +1,8 @@
-import { FLIGHT_LIST_ACTIONS, FLIGHT_LIST_ITEM_ACTIONS } from './flight.actions.js';
+import { FLIGHT_LIST_ACTIONS, FLIGHT_FILTER } from './flight.actions.js';
 
 const initialState = {
-    flightData: null
+    flightData: null,
+    flight: '',
 }
 
 export const flightReducer = (state = initialState, action) => {
@@ -10,6 +11,11 @@ export const flightReducer = (state = initialState, action) => {
             return {
                 ...state,
                 flightData: action.payload.flightData
+            }
+        case FLIGHT_FILTER:
+            return {
+                ...state,
+                flight: action.payload.flight
             }
 
         default:

@@ -12,17 +12,16 @@ module.exports = (env, argv) => {
             filename: "bundle.js"
         },
         module: {
-            rules: [
-                {
+            rules: [{
                     test: /.jsx?$/,
                     use: ["babel-loader"]
                 },
                 {
                     test: /.s?css$/,
                     use: [
-                        isProduction
-                            ? MiniCssExtractPlugin.loader
-                            : "style-loader",
+                        isProduction ?
+                        MiniCssExtractPlugin.loader :
+                        "style-loader",
                         "css-loader",
                         "sass-loader",
                     ]
@@ -42,7 +41,9 @@ module.exports = (env, argv) => {
             }),
         ],
         devServer: {
-            hot: true
+            hot: true,
+            port: 8080,
+            historyApiFallback: true
         }
     };
 
