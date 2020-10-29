@@ -25,7 +25,6 @@ const FilteredFlight = ({ flightData, flightFilter }) => {
             </ul>
         )
     )
-
 };
 
 export default FilteredFlight;
